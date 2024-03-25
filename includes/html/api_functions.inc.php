@@ -1792,6 +1792,10 @@ function get_bill_history_graph(Illuminate\Http\Request $request)
             break;
 
         case 'day':
+            $vars['imgtype'] = $graph_type;
+            $vars['type'] = 'bill_historictransfer';
+            break;
+        
         case 'hour':
             $vars['imgtype'] = $graph_type;
             $vars['type'] = 'bill_historictransfer';
